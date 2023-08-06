@@ -17,6 +17,31 @@ int *insertElement(int array[], int n, int num, int loc){
     return array;
 }
 
+int *deleteElement(int array1[], int size, int delNum){
+    int found = 0;
+    int i, j;
+    for (i = 0; i < size;i++){
+        if(array1[i]==delNum){
+            for (j = i; j < size- 1;j++){
+                array1[j] = array1[j + 1];
+            }
+            found++;
+            break;
+        }
+    }
+    if(found==0){
+        cout << "Element not found" << endl;
+    }
+    else{
+        cout << "Element is deleted Successfully" << endl;
+        cout << "New array is:";
+        for (i = 0; i < (size - 1); i++){
+            cout << array1[i];
+        }
+    }
+    return array1;
+}
+
 int main()
 {
     int choice;
@@ -52,32 +77,17 @@ int main()
             break;
         case 2:
 
-            // int n, array[10], num,i,j;
-            // cout << "Enter the size of the array:";
-            // cin >> n;
+            int size, array1[10], delNum,i;
+            cout << "Enter the size of the array:";
+            cin >> size;
+            for (i = 0; i < size;i++){
+                cin >> array1[i];
+            }
             cout << "Enter the Number to be deleted:";
-            // cin >> num;
-            // int found = 0;
-            // for (i = 0; i < n;i++){
-            //     if(array[i]==num){
-            //         for (j = i; j < n - 1;j++){
-            //             array[j] = array[j + 1];
-            //         }
-            //         // found++;
-            //         break;
-            //     }
-            // }
-            // if(found==0){
-            //     cout << "Element not found" << endl;
-            // }
-            // else{
-            //     cout << "Element is deleted Successfully" << endl;
-            //     cout << "New array is:";
-            //     for (i = 0; i < (n - 1); i++){
-            //         cout << array[i];
-            //     }
-            // }
-                break;
+            cin >> delNum;
+            deleteElement(array1, size, delNum);
+
+            break;
         case 0:
             exit = true;
             break;
