@@ -1,10 +1,26 @@
 #include <iostream>
 using namespace std;
 
+int *insertElement(int array[], int n, int num, int loc){
+    
+
+    // inserting the element in the array
+    int i;
+    for (i = n; i >= loc; i--)
+        array[i] = array[i - 1];
+    array[i] = num;
+    // displaying the new array
+    cout << "the new array is :";
+    for (i = 0; i < (n + 1); i++)
+        cout << array[i] << "";
+
+    return array;
+}
+
 int main()
 {
     int choice;
-    bool exit = false;
+     int exit = false;
 
     while (!exit)
     {
@@ -27,24 +43,41 @@ int main()
             {
                 cin >> array[i];
             }
-            // inserting the element in the array
             int loc, num;
             cout << "Enter the location and the array:" << endl;
             cin >> loc >> num;
-
             // inserting the element in the array
-            int i;
-            for (i = n; i >= loc; i--)
-                array[i] = array[i - 1];
-            array[i] = num;
-            // displaying the new array
-            cout << "the new array is :";
-            for (i = 0; i < (n + 1); i++)
-                cout << array[i] << "";
+            insertElement(array, n, num, loc);
+
             break;
         case 2:
-            cout << "Went to the down side" << endl;
-            break;
+
+            // int n, array[10], num,i,j;
+            // cout << "Enter the size of the array:";
+            // cin >> n;
+            cout << "Enter the Number to be deleted:";
+            // cin >> num;
+            // int found = 0;
+            // for (i = 0; i < n;i++){
+            //     if(array[i]==num){
+            //         for (j = i; j < n - 1;j++){
+            //             array[j] = array[j + 1];
+            //         }
+            //         // found++;
+            //         break;
+            //     }
+            // }
+            // if(found==0){
+            //     cout << "Element not found" << endl;
+            // }
+            // else{
+            //     cout << "Element is deleted Successfully" << endl;
+            //     cout << "New array is:";
+            //     for (i = 0; i < (n - 1); i++){
+            //         cout << array[i];
+            //     }
+            // }
+                break;
         case 0:
             exit = true;
             break;
