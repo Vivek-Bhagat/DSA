@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <time.h>
+#include <fstream>
+
 using namespace std;
 
 void bubbleSort(long int a[], long int n)
@@ -71,10 +73,13 @@ int main()
     //     cout << a[i] << " ";
     // }
 
+    // fstream Myfile("Times.txt");
+    // Myfile.open("Times.txt", ios::out);
     long int n = 10000;
     long int x = 10;
     long int count = 0;
     cout << "S.no\tBubble Sort\tSelection Sort\tInsertion Sort" << endl;
+    // Myfile << "S.no\tBubble Sort\tSelection Sort\tInsertion Sort" << endl;
     while (x--)
     {
 
@@ -88,6 +93,7 @@ int main()
         }
 
         cout << count << "\t";
+        // Myfile << count << "\t";
         clock_t first, last;
         double time_used = 0;
         // calculating the time complexity for the bubble sort
@@ -96,6 +102,7 @@ int main()
         last = clock();
         time_used = ((double)(last - first)) / CLOCKS_PER_SEC;
         cout << (time_used) << "\t\t";
+        // Myfile << (time_used) << "\t\t";
 
         // calculating the time complexity for the Selection Sort
         first = clock();
@@ -103,16 +110,19 @@ int main()
         last = clock();
         time_used = ((double)(last - first)) / CLOCKS_PER_SEC;
         cout << (time_used) << "\t\t";
+        // Myfile << (time_used) << "\t\t";
 
         // calculating the time complexity for the Inserion Sort
         first = clock();
         insertionSort(c, n);
         last = clock();
         time_used = ((double)(last - first)) / CLOCKS_PER_SEC;
-        cout << (time_used) <<endl;
+        cout << (time_used) << endl;
+        // Myfile << (time_used) << endl;
 
         count++;
         n += 10000;
     }
+    // Myfile.close();
     return 0;
 }

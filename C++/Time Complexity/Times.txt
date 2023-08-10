@@ -1,4 +1,2 @@
 S.no	Bubble Sort	Selection Sort	Insertion Sort
-0	0.369		0.093		0.11
-1	1.551		0.39		0.407
-2	3.469		0.945		0.897
+0	0.412		0.102		0.071
