@@ -5,7 +5,7 @@
 using namespace std;
 
 // Function to insert x in arr at position pos
-int *insertX(int n, int arr[],int x, int pos)
+int *insertX(int n, int arr[], int x, int pos)
 {
     int i;
 

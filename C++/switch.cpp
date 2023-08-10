@@ -1,3 +1,5 @@
+//? WAP to  - take input fro the user to take the choice where he can (1)Insert the element (2) Delete the element (3)Search the element (4) Print the fibonacci series ?
+
 #include <iostream>
 using namespace std;
 
@@ -6,7 +8,7 @@ int *insertElement(int array[], int n, int num, int loc)
 
     // inserting the element in the array
     int i;
-    for (i = n; i >= loc; i--)
+    for (i = n; i >= loc; i--)  
         array[i] = array[i - 1];
     array[i] = num;
     // displaying the new array
