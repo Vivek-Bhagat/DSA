@@ -46,7 +46,7 @@ void selectionSort(long int a[], long int n)
 void insertionSort(long int a[], long int n)
 {
     int i, j, key;
-    for (i = 1; i < n - 1; i++)
+    for (i = 1; i < n ; i++)
     {
         key = a[i];
         j = i - 1;
