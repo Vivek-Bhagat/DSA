@@ -1,0 +1,27 @@
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ program.cpp -o program } ; if ($?) { .\program }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ Program2.cpp -o Program2 } ; if ($?) { .\Program2 }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ Program2.cpp -o Program2 } ; if ($?) { .\Program2 }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ Program2.cpp -o Program2 } ; if ($?) { .\Program2 }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ Program2.cpp -o Program2 } ; if ($?) { .\Program2 }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ Program2.cpp -o Program2 } ; if ($?) { .\Program2 }
+cd "d:\Programming\DSA\C++\File Handling\" ; if ($?) { g++ Program2.cpp -o Program2 } ; if ($?) { .\Program2 }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ example1.cpp -o example1 } ; if ($?) { .\example1 }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ example1.cpp -o example1 } ; if ($?) { .\example1 }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ example1.cpp -o example1 } ; if ($?) { .\example1 }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile } ; if ($?) { .\tempCodeRunnerFile }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ example1.cpp -o example1 } ; if ($?) { .\example1 }
+cd "d:\Programming\DSA\C++\" ; if ($?) { g++ insertionSort.cpp -o insertionSort } ; if ($?) { .\insertionSort }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ example1.cpp -o example1 } ; if ($?) { .\example1 }
+cd "d:\Programming\DSA\C++\" ; if ($?) { g++ insertionSort.cpp -o insertionSort } ; if ($?) { .\insertionSort }
+cd "d:\Programming\DSA\C++\" ; if ($?) { g++ insertionSort.cpp -o insertionSort } ; if ($?) { .\insertionSort }
+cd "d:\Programming\DSA\C++\File Handling\Example\" ; if ($?) { g++ example1.cpp -o example1 } ; if ($?) { .\example1 }
+cd "d:\Programming\DSA\C++\" ; if ($?) { g++ insertionSort.cpp -o insertionSort } ; if ($?) { .\insertionSort }
+cd "d:\Programming\DSA\C++\" ; if ($?) { g++ insertionSort.cpp -o insertionSort } ; if ($?) { .\insertionSort }
+cd "d:\Programming\DSA\C++\" ; if ($?) { g++ insertionSort.cpp -o insertionSort } ; if ($?) { .\insertionSort }
