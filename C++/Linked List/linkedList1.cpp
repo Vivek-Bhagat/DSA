@@ -46,6 +46,20 @@ void insertTail(node *&head, int val)
     temp->next = n;
 }
 
+bool searchData(node *head, int key)
+{
+    node *temp = head; // head ko assign karr ko temp ko
+    while (temp != NULL)
+    { // traverse karo tab tak head zero tk nhi pahuch jata h
+        if (temp->data == key)
+        { // agar temp ka data key  barabar aa jata h to return true
+            return true;
+        }
+        temp = temp->next; // points the next node
+    }
+    return false;
+}
+
 // print the list
 void display(node *head)
 {
@@ -68,4 +82,5 @@ int main()
     display(head);
     insertAtHead(head, 4);
     display(head);
+    cout << searchData(head, 4) << endl;
 }
