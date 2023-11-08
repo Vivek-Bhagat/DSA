@@ -23,7 +23,7 @@ void insertAtHead(node *&head, int val)
 {
     node *n = new node(val); // new node creation
     n->next = head;          // points the new node to the head and creates a node null
-    head = n;                // make the equal
+    head = n;                // assign the n to the head
 }
 
 // inserting value at the end of the linked list
