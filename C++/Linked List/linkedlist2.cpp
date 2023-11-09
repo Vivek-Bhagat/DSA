@@ -31,6 +31,14 @@ void insertAtEnd(int data)
     newNode->next = NULL;
 }
 
+void insertAtPos(struct node *list, int data)
+{
+    struct node *newNode = (struct node *)malloc(sizeof(struct node));
+    newNode->data = data;
+    newNode->next = list->next;
+    list->next = newNode;
+}
+
 void printList()
 {
     struct node *p = head;
