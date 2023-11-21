@@ -24,10 +24,10 @@ void insertAtEnd(int data)
     struct node *newNode = (struct node *)malloc(sizeof(struct node));
     newNode->data = data;
 
-    struct node *list = head;
-    while (list->next != NULL)
-        list = list->next;
-    list->next = newNode;
+    struct node *ptr = head;
+    while (ptr->next != NULL)
+        ptr = ptr->next;
+    ptr->next = newNode;
     newNode->next = NULL;
 }
 
