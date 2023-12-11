@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 using namespace std;
+int s = 0;
 
 struct node
 {
@@ -48,6 +49,25 @@ void printList()
         p = p->next;
     }
 }
+
+int sum(struct node *h)
+{
+    struct node *ptr = h;
+    //     while (ptr->next == NULL)
+    //     {
+    //         s = s + ptr->data;
+    //     }
+    //     cout << s;
+    if (ptr->next == NULL)
+        return 0;
+    else
+    {
+        s = s + ptr->data;
+        sum(ptr->next);
+        return s;
+    }
+}
+
 int main()
 {
     insertAtBeg(5);
@@ -57,5 +77,6 @@ int main()
     cout << "\nAfter insertin at the end of the list" << endl;
     insertAtEnd(10);
     printList();
+    cout << sum(head);
     return 0;
 }
