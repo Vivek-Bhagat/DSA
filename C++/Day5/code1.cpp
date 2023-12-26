@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int main()
@@ -7,7 +7,10 @@ int main()
     int n;
     cout << "Enter the size of the array :";
     cin >> n;
-    int a[n];
+
+    // Dynamic memory allocation for the array
+    int *a = new int[n];
+
     cout << "Enter the array :";
     for (int i = 0; i < n; i++)
     {
@@ -15,7 +18,8 @@ int main()
     }
 
     const int N = 1e6 + 2;
-    int idx[N];
+    int *idx = new int[N];
+
     for (int i = 0; i < N; i++)
     {
         idx[i] = -1;
@@ -33,6 +37,7 @@ int main()
             idx[a[i]] = i;
         }
     }
+
     if (minIdx == INT_MAX)
     {
         cout << "-1" << endl;
@@ -41,5 +46,10 @@ int main()
     {
         cout << minIdx + 1 << endl;
     }
+
+    // Deallocate dynamic memory
+    delete[] a;
+    delete[] idx;
+
     return 0;
 }
