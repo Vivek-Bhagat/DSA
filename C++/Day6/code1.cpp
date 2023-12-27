@@ -14,7 +14,7 @@ int setBit(int x, int pos)
 }
 int main()
 {
-    cout << getBit(5, 2) << endl;
-
+    cout << getBit(5, 2) << endl; // here 101 -> at pos 2 the number is 1
+    cout << setBit(5, 1) << endl; // here 101 + 10 = 111 => 7
     return 0;
 }
