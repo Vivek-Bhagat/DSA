@@ -1,4 +1,4 @@
-// Prime Factor of the number
+// Prime Factor of the given number
 
 #include <iostream>
 using namespace std;
